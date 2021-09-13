@@ -8,5 +8,5 @@ addEventListener(
  * @returns {Response}
  */
 function handleRequest(request) {
-  return new Response("Hello World");
+  return new Response("Hello World!!!");
 }
