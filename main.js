@@ -1,12 +1,7 @@
-addEventListener(
-  "fetch",
-  (event) => event.respondWith(handleRequest(event.request)),
-);
-
-/**
- * @param {Request} request
- * @returns {Response}
- */
-function handleRequest(request) {
-  return new Response("Hello World!!!");
+import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
+  
+function handler(req: Request): Response {
+  return new Response("Hello world");
 }
+
+serve(handler);
